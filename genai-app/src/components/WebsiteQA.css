@@ -1,0 +1,165 @@
+/* WebsiteQA.css */
+
+.websiteqa-page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f6f8fa;
+}
+
+.websiteqa-header {
+  width: 100vw;
+  background: #316d89;
+  color: #fff;
+  padding: 24px 0 28px 0;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(49,109,137,0.08);
+  position: relative;
+  box-sizing: border-box;
+}
+
+.websiteqa-header h2 {
+  margin: 0 0 6px 0;
+  font-size: 2.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.websiteqa-header p {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 400;
+  opacity: 0.95;
+}
+
+.websiteqa-footer {
+  width: 100%;
+  background: #222831;
+  color: #fff;
+  text-align: center;
+  padding: 14px 0 10px 0;
+  font-size: 1rem;
+  margin-top: auto;
+  letter-spacing: 0.5px;
+  box-shadow: 0 -2px 8px rgba(49,109,137,0.06);
+}
+
+body, html, #root, .websiteqa-page-wrapper {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.websiteqa-header,
+.websiteqa-footer {
+  width: 100vw;
+  left: 0;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.websiteqa-container {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 32px 24px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08), 0 1.5px 4px rgba(0,0,0,0.04);
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.websiteqa-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: #2d3748;
+}
+
+.websiteqa-form label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #222831;
+}
+
+.websiteqa-form input[type="text"] {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 16px;
+  background: #f9fafb;
+  color: #222;
+  transition: border 0.2s;
+}
+
+.websiteqa-form input[type="text"]:focus {
+  border: 1.5px solid #3182ce;
+  outline: none;
+  background: #fff;
+}
+
+.websiteqa-form button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(90deg, #3182ce 60%, #63b3ed 100%);
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background 0.2s;
+}
+
+.websiteqa-form button:disabled {
+  background: #b6c6e3;
+  cursor: not-allowed;
+}
+
+.websiteqa-chat {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.websiteqa-message {
+  padding: 16px 18px;
+  border-radius: 12px;
+  background: #f0f4f8;
+  font-size: 1.05rem;
+  color: #000000;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  align-self: flex-end;
+  max-width: 90%;
+}
+
+.websiteqa-message.user {
+  background: #316d89;
+  color: #ffffff;
+  align-self: flex-end;
+}
+
+.websiteqa-message.bot {
+  background: #f0f4f8;
+  color: #2d3748;
+  align-self: flex-start;
+}
+
+.websiteqa-error {
+  margin-top: 24px;
+  color: #e53e3e;
+  background: #fff5f5;
+  border: 1px solid #fed7d7;
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-weight: 500;
+  text-align: center;
+}
